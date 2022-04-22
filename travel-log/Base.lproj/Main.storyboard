@@ -139,12 +139,6 @@
                                     <segue destination="kkt-ZM-k9K" kind="show" identifier="PhotoSegue" id="AGM-Hi-jMw"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Where did you go?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EoM-Nt-aDA">
-                                <rect key="frame" x="92" y="128" width="230" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prm-Rc-2oj">
                                 <rect key="frame" x="96" y="611" width="222" height="102"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -159,9 +153,6 @@
                         <color key="backgroundColor" red="0.98340171580000002" green="0.92288452389999998" blue="0.85881286859999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="cY4-IC-Arj"/>
-                    <connections>
-                        <outlet property="nameText" destination="EoM-Nt-aDA" id="Ref-Rm-qmb"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x6k-dY-PBL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -206,7 +197,6 @@
         <!--Navigation Controller-->
         <scene sceneID="S56-uH-xDY">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7nA-ee-Cfw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kZt-Iw-hkD" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gB2-x3-JTy">
@@ -218,6 +208,7 @@
                         <segue destination="Yd1-tT-DYl" kind="relationship" relationship="rootViewController" id="p0w-ds-w7f"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7nA-ee-Cfw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="818.84057971014499" y="26.785714285714285"/>
         </scene>
