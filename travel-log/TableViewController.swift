@@ -14,8 +14,19 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        getSounds()
+        getItems()
         getPlaces()
     }//viewDidLoad()
+    
+    func getSounds() {
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            if let tempSpund = try? context.fetch(LogObject.fetchRequest()) as? [LogObject]  {
+                placeList = tempSpund
+                tableView.reloadData()
+            }
+        }
+    }//getSounds
     
     func getPlaces() {
         if let context = (UIApplication.shared.delegate as?AppDelegate)?.persistentContainer.viewContext{
@@ -26,9 +37,19 @@ class TableViewController: UITableViewController {
         }//if let context
     }//getPlaces()
   
+    func getItems() {
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            if let coredatastuff = try? context.fetch(LogObject.fetchRequest())  as? [LogObject] {
+                placeList = coredatastuff
+                tableView.reloadData()
+            }
+        }
+    }
 
     override func viewWillAppear(_ animated: Bool) {
+        getItems()
         getPlaces()
+        tableView.reloadData()
     }//viewWillAppear
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -38,9 +59,18 @@ class TableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LogCell", for: indexPath)
-
-        let title = placeList[indexPath.row].placeName
+        let item = placeList[indexPath.row]
+        let title = item.placeName
         cell.textLabel?.text = title
+        cell.textLabel?.text = item.title
+        cell.textLabel?.text = item.soundName
+        
+
+        if let imageData = item.image {
+            
+            cell.imageView?.image = UIImage(data: imageData)
+            
+        }
         return cell
     }//tableView: UITableView, cellForRowAt
     

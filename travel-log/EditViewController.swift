@@ -19,7 +19,8 @@ class EditViewController: UIViewController, MKMapViewDelegate, CLLocationManager
     var prevVC =  TableViewController()
     var place : LogObject? = nil
     var loc = 0
-
+    var imagePicker = UIImagePickerController()
+    @IBOutlet weak var editImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -45,6 +46,15 @@ class EditViewController: UIViewController, MKMapViewDelegate, CLLocationManager
         self.viewMap.addAnnotation(annotaiton)
         
         name.text = place?.placeName
+        
+//        if let photoinData = LogObject.value(forKey: "image") as? UIImage{
+//            editImageView.image = photoinData
+//        }
+        
+//        editImageView.image = place?.image as? UIImage
+    
+        
+        
         
         
     }//viewDidLoad
