@@ -14,6 +14,11 @@
 		0180BA692810E8A000A8FA6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0180BA682810E8A000A8FA6E /* Assets.xcassets */; };
 		0180BA6C2810E8A000A8FA6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0180BA6A2810E8A000A8FA6E /* LaunchScreen.storyboard */; };
 		0180BA742810E92200A8FA6E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0180BA732810E92200A8FA6E /* TableViewController.swift */; };
+		B05F00F628120F4C00A8FB8A /* LocAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05F00F528120F4C00A8FB8A /* LocAddViewController.swift */; };
+		B05F00F82812101700A8FB8A /* PhotoAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05F00F72812101700A8FB8A /* PhotoAddViewController.swift */; };
+		B05F00FA2812137000A8FB8A /* ReflectionAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05F00F92812137000A8FB8A /* ReflectionAddViewController.swift */; };
+		B05F00FC28122DAE00A8FB8A /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05F00FB28122DAE00A8FB8A /* AddViewController.swift */; };
+		B05F00FE28122DC400A8FB8A /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05F00FD28122DC400A8FB8A /* EditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		0180BA6B2810E8A000A8FA6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0180BA6D2810E8A000A8FA6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0180BA732810E92200A8FA6E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		B05F00F528120F4C00A8FB8A /* LocAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocAddViewController.swift; sourceTree = "<group>"; };
+		B05F00F72812101700A8FB8A /* PhotoAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAddViewController.swift; sourceTree = "<group>"; };
+		B05F00F92812137000A8FB8A /* ReflectionAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionAddViewController.swift; sourceTree = "<group>"; };
+		B05F00FB28122DAE00A8FB8A /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		B05F00FD28122DC400A8FB8A /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +71,11 @@
 				0180BA5C2810E89E00A8FA6E /* AppDelegate.swift */,
 				0180BA5E2810E89E00A8FA6E /* SceneDelegate.swift */,
 				0180BA732810E92200A8FA6E /* TableViewController.swift */,
+				B05F00F528120F4C00A8FB8A /* LocAddViewController.swift */,
+				B05F00F72812101700A8FB8A /* PhotoAddViewController.swift */,
+				B05F00F92812137000A8FB8A /* ReflectionAddViewController.swift */,
+				B05F00FB28122DAE00A8FB8A /* AddViewController.swift */,
+				B05F00FD28122DC400A8FB8A /* EditViewController.swift */,
 				0180BA622810E89F00A8FA6E /* Main.storyboard */,
 				0180BA682810E8A000A8FA6E /* Assets.xcassets */,
 				0180BA6A2810E8A000A8FA6E /* LaunchScreen.storyboard */,
@@ -141,10 +156,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B05F00FA2812137000A8FB8A /* ReflectionAddViewController.swift in Sources */,
+				B05F00F628120F4C00A8FB8A /* LocAddViewController.swift in Sources */,
+				B05F00FC28122DAE00A8FB8A /* AddViewController.swift in Sources */,
 				0180BA5D2810E89E00A8FA6E /* AppDelegate.swift in Sources */,
 				0180BA672810E89F00A8FA6E /* travel_log.xcdatamodeld in Sources */,
 				0180BA5F2810E89F00A8FA6E /* SceneDelegate.swift in Sources */,
 				0180BA742810E92200A8FA6E /* TableViewController.swift in Sources */,
+				B05F00F82812101700A8FB8A /* PhotoAddViewController.swift in Sources */,
+				B05F00FE28122DC400A8FB8A /* EditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +318,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,6 +346,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
