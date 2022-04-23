@@ -81,9 +81,13 @@ class ReflectionAddViewController: UIViewController {
         
         if let context =  (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
             let sound = LogObject(entity: LogObject.entity(), insertInto: context)
-            sound.soundName = soundTextField.text
+            sound.placeName = soundTextField.text
              if let audioURL = self.audioURL {
                sound.audioData = try? Data(contentsOf: audioURL)
+                sound.url = audioURL
+                let img = UIImage(named: "microphone.png")
+                let imgData = img!.jpegData(compressionQuality: 1)
+                sound.setValue(imgData, forKey: "image")
                try? context.save()
                 navigationController?.popViewController(animated: true)
             }

@@ -8,11 +8,14 @@
 import UIKit
 import MapKit
 import CoreLocation
+import AVFoundation
 
 class EditViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var viewMap: MKMapView!
+    var audioPlayer: AVAudioPlayer?
+    var audioURL : URL?
     
     var locManager = CLLocationManager()
     
@@ -21,6 +24,7 @@ class EditViewController: UIViewController, MKMapViewDelegate, CLLocationManager
     var loc = 0
     var imagePicker = UIImagePickerController()
     @IBOutlet weak var editImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -46,18 +50,27 @@ class EditViewController: UIViewController, MKMapViewDelegate, CLLocationManager
         self.viewMap.addAnnotation(annotaiton)
         
         name.text = place?.placeName
+
         
-//        if let photoinData = LogObject.value(forKey: "image") as? UIImage{
-//            editImageView.image = photoinData
-//        }
-        
-//        editImageView.image = place?.image as? UIImage
-    
-        
-        
-        
+        if let imageData = place?.image as? NSData {
+            if let image = UIImage(data:imageData as Data) {
+                editImageView.image = image
+            }
+        }
         
     }//viewDidLoad
+    
+    
+    
+    @IBAction func playButton(_ sender: Any) {
+
+        if let audioURL = place?.url {
+            audioPlayer = try? AVAudioPlayer(contentsOf: audioURL)
+            audioPlayer?.play()
+        }
+        
+    }//playButton
+    
     
 
     

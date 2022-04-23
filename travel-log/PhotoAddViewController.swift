@@ -24,7 +24,7 @@ class PhotoAddViewController: UIViewController, UIImagePickerControllerDelegate 
         if let context =
             (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
                 let item = LogObject(entity: LogObject.entity(), insertInto: context)
-                item.title = titleTextField.text
+                item.placeName = titleTextField.text
                 if let image = itemImageView.image {
                     if let imageData = image.pngData() {
                         item.image = imageData

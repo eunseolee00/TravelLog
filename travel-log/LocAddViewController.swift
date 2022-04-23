@@ -113,7 +113,10 @@ class LocAddViewController: UIViewController, MKMapViewDelegate, CLLocationManag
                     place.placeName = address
                     place.latitude = lat
                     place.longitude = lon
-                    
+                    let img = UIImage(named: "maps.png")
+                    let imgData = img!.jpegData(compressionQuality: 1)
+                    place.setValue(imgData, forKey: "image")
+              
                     try? context.save()
                     //self.prevVC.getPlaces()
                     self.navigationController?.popViewController(animated: true)
@@ -132,6 +135,7 @@ class LocAddViewController: UIViewController, MKMapViewDelegate, CLLocationManag
         let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
         let region = MKCoordinateRegion(center: location, span: span)
         mapView.setRegion(region, animated: true)
+        
     }//locationManager
     
     

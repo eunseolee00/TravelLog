@@ -62,8 +62,8 @@ class TableViewController: UITableViewController {
         let item = placeList[indexPath.row]
         let title = item.placeName
         cell.textLabel?.text = title
-        cell.textLabel?.text = item.title
-        cell.textLabel?.text = item.soundName
+//        cell.textLabel?.text = item.title
+//        cell.textLabel?.text = item.soundName
         
 
         if let imageData = item.image {
@@ -91,6 +91,8 @@ class TableViewController: UITableViewController {
                 context.delete(place)
                 try? context.save()
                 getPlaces()
+                getItems()
+                getSounds()
             }//if
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view

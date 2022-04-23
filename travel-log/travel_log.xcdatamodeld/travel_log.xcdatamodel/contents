@@ -8,8 +8,9 @@
         <attribute name="placeName" optional="YES" attributeType="String"/>
         <attribute name="soundName" optional="YES" attributeType="String"/>
         <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="url" optional="YES" attributeType="URI"/>
     </entity>
     <elements>
-        <element name="LogObject" positionX="-45" positionY="0" width="128" height="134"/>
+        <element name="LogObject" positionX="-45" positionY="0" width="128" height="149"/>
     </elements>
 </model>
