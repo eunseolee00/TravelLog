@@ -113,7 +113,7 @@ class LocAddViewController: UIViewController, MKMapViewDelegate, CLLocationManag
                     place.placeName = address
                     place.latitude = lat
                     place.longitude = lon
-                    let img = UIImage(named: "maps.png")
+                    let img = UIImage(named: "map.png")
                     let imgData = img!.jpegData(compressionQuality: 1)
                     place.setValue(imgData, forKey: "image")
               

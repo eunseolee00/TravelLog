@@ -85,7 +85,7 @@ class ReflectionAddViewController: UIViewController {
              if let audioURL = self.audioURL {
                sound.audioData = try? Data(contentsOf: audioURL)
                 sound.url = audioURL
-                let img = UIImage(named: "microphone.png")
+                let img = UIImage(named: "mic.png")
                 let imgData = img!.jpegData(compressionQuality: 1)
                 sound.setValue(imgData, forKey: "image")
                try? context.save()

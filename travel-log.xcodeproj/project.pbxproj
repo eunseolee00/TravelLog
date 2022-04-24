@@ -14,11 +14,6 @@
 		0180BA692810E8A000A8FA6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0180BA682810E8A000A8FA6E /* Assets.xcassets */; };
 		0180BA6C2810E8A000A8FA6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0180BA6A2810E8A000A8FA6E /* LaunchScreen.storyboard */; };
 		0180BA742810E92200A8FA6E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0180BA732810E92200A8FA6E /* TableViewController.swift */; };
-		0180BA7A2813674900A8FA6E /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0180BA772813674900A8FA6E /* 1.png */; };
-		0180BA7B2813674900A8FA6E /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0180BA782813674900A8FA6E /* 2.png */; };
-		0180BA7C2813674900A8FA6E /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 0180BA792813674900A8FA6E /* 3.png */; };
-		0197A70F28149FB40068A40D /* maps.png in Resources */ = {isa = PBXBuildFile; fileRef = 0197A70E28149FB40068A40D /* maps.png */; };
-		0197A7112814A13C0068A40D /* microphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 0197A7102814A13C0068A40D /* microphone.png */; };
 		B05F00F628120F4C00A8FB8A /* LocAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05F00F528120F4C00A8FB8A /* LocAddViewController.swift */; };
 		B05F00F82812101700A8FB8A /* PhotoAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05F00F72812101700A8FB8A /* PhotoAddViewController.swift */; };
 		B05F00FA2812137000A8FB8A /* ReflectionAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05F00F92812137000A8FB8A /* ReflectionAddViewController.swift */; };
@@ -36,11 +31,6 @@
 		0180BA6B2810E8A000A8FA6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0180BA6D2810E8A000A8FA6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0180BA732810E92200A8FA6E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		0180BA772813674900A8FA6E /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1.png; path = ../../../Downloads/25.12.21/1.png; sourceTree = "<group>"; };
-		0180BA782813674900A8FA6E /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2.png; path = ../../../Downloads/25.12.21/2.png; sourceTree = "<group>"; };
-		0180BA792813674900A8FA6E /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3.png; path = ../../../Downloads/25.12.21/3.png; sourceTree = "<group>"; };
-		0197A70E28149FB40068A40D /* maps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = maps.png; path = ../../../Downloads/maps.png; sourceTree = "<group>"; };
-		0197A7102814A13C0068A40D /* microphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = microphone.png; path = ../../../Downloads/microphone.png; sourceTree = "<group>"; };
 		B05F00F528120F4C00A8FB8A /* LocAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocAddViewController.swift; sourceTree = "<group>"; };
 		B05F00F72812101700A8FB8A /* PhotoAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAddViewController.swift; sourceTree = "<group>"; };
 		B05F00F92812137000A8FB8A /* ReflectionAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionAddViewController.swift; sourceTree = "<group>"; };
@@ -78,11 +68,6 @@
 		0180BA5B2810E89E00A8FA6E /* travel-log */ = {
 			isa = PBXGroup;
 			children = (
-				0197A7102814A13C0068A40D /* microphone.png */,
-				0197A70E28149FB40068A40D /* maps.png */,
-				0180BA772813674900A8FA6E /* 1.png */,
-				0180BA782813674900A8FA6E /* 2.png */,
-				0180BA792813674900A8FA6E /* 3.png */,
 				0180BA5C2810E89E00A8FA6E /* AppDelegate.swift */,
 				0180BA5E2810E89E00A8FA6E /* SceneDelegate.swift */,
 				0180BA732810E92200A8FA6E /* TableViewController.swift */,
@@ -158,12 +143,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0197A70F28149FB40068A40D /* maps.png in Resources */,
 				0180BA6C2810E8A000A8FA6E /* LaunchScreen.storyboard in Resources */,
-				0180BA7A2813674900A8FA6E /* 1.png in Resources */,
-				0180BA7B2813674900A8FA6E /* 2.png in Resources */,
-				0180BA7C2813674900A8FA6E /* 3.png in Resources */,
-				0197A7112814A13C0068A40D /* microphone.png in Resources */,
 				0180BA692810E8A000A8FA6E /* Assets.xcassets in Resources */,
 				0180BA642810E89F00A8FA6E /* Main.storyboard in Resources */,
 			);
