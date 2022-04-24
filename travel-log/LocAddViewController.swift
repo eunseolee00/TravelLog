@@ -19,13 +19,15 @@ class LocAddViewController: UIViewController, MKMapViewDelegate, CLLocationManag
     var prevVC =  AddViewController()
     
     override func viewDidLoad() {
-        print("yes")
+        
+    
         super.viewDidLoad()
         mapView.delegate = self
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
+        
         
         let gestureRecognizer = UILongPressGestureRecognizer( target: self,
             action: #selector(chooseLocation(gestureRecognizer: )))

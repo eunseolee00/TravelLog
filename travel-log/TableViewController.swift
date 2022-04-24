@@ -21,7 +21,7 @@ class TableViewController: UITableViewController {
     
     func getSounds() {
         if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
-            if let tempSpund = try? context.fetch(LogObject.fetchRequest()) as? [LogObject]  {
+            if let tempSpund = try? context.fetch(LogObject.fetchRequest()) as [LogObject]  {
                 placeList = tempSpund
                 tableView.reloadData()
             }
@@ -39,7 +39,7 @@ class TableViewController: UITableViewController {
   
     func getItems() {
         if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
-            if let coredatastuff = try? context.fetch(LogObject.fetchRequest())  as? [LogObject] {
+            if let coredatastuff = try? context.fetch(LogObject.fetchRequest())  as [LogObject] {
                 placeList = coredatastuff
                 tableView.reloadData()
             }
